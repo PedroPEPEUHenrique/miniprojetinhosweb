@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# 📱 Nome do Projeto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Uma breve descrição do que este aplicativo faz e qual o seu objetivo principal.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tecnologias e Dependências
 
-   ```bash
-   npm install
-   ```
+Este projeto foi desenvolvido utilizando o ecossistema **Expo** e as seguintes bibliotecas:
 
-2. Start the app
+- **[React Navigation (Drawer)](https://reactnavigation.org/docs/drawer-based-navigation/)**: Navegação lateral intuitiva.
+- **[React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)**: Motor de animações de alta performance.
+- **[React Native Worklets](https://github.com/chimeg/react-native-worklets)**: Suporte para execução de código em threads secundárias.
+- **[Tabler Icons React](https://tabler.io/icons)**: Conjunto de ícones personalizáveis para a interface.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📦 Instalação e Setup
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Siga os passos abaixo para rodar o projeto localmente:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Criar o projeto (caso ainda não tenha criado)
 ```bash
-npm run reset-project
-```
+npx create-expo-app@latest "nome-do-projeto"
+cd "nome-do-projeto"
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npx expo install @react-navigation/drawer react-native-reanimated react-native-worklets
 
-## Learn more
+npm install @tabler/icons-react
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npx expo start ou npm start
